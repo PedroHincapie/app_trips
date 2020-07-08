@@ -7,6 +7,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'App Trips',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Lato',
+      ),
       home: HomePage(),
     );
   }
