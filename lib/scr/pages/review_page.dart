@@ -2,11 +2,26 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ReviewPage extends StatelessWidget {
+  static const String _rutaPlaceHolder = 'assets/images/jar-loading.gif';
+
+  String urlImagen;
+  String nombreUsuario;
+  String detalles;
+  String comentario;
+
+  ReviewPage({
+    @required this.urlImagen,
+    @required this.nombreUsuario,
+    @required this.detalles,
+    @required this.comentario,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
         _crearFoto(),
+        _crearDetalleReview(),
       ],
     );
   }
@@ -14,9 +29,8 @@ class ReviewPage extends StatelessWidget {
   Container _crearFoto() {
     final containerFoto = Container(
       child: FadeInImage(
-        placeholder: AssetImage('assets/images/jar-loading.gif'),
-        image: NetworkImage(
-            'https://vignette.wikia.nocookie.net/disney/images/5/53/Stan_Lee.jpg/revision/latest/top-crop/width/360/height/450?cb=20181204153103'),
+        placeholder: AssetImage(_rutaPlaceHolder),
+        image: NetworkImage(urlImagen),
         fadeInDuration: Duration(milliseconds: 200),
         fit: BoxFit.cover,
         width: 80.0,
@@ -33,6 +47,24 @@ class ReviewPage extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(35.0),
         child: containerFoto,
+      ),
+    );
+  }
+
+  Column _crearDetalleReview() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        _crearNombreDelUsuario(),
+      ],
+    );
+  }
+
+  Widget _crearNombreDelUsuario() {
+    return Container(
+      child: Text(nombreUsuario),
+      margin: EdgeInsets.only(
+        left: 12.0,
       ),
     );
   }
