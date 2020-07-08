@@ -38,7 +38,6 @@ class DescriptionPlacePage extends StatelessWidget {
       child: Text(
         nombreSitio,
         style: TextStyle(
-          fontFamily: "Lato",
           fontSize: 30.0,
           fontWeight: FontWeight.w900,
         ),
@@ -103,7 +102,6 @@ class DescriptionPlacePage extends StatelessWidget {
       child: Text(
         descripcionSitio,
         style: const TextStyle(
-          fontFamily: "Lato",
           fontSize: 16.0,
           fontWeight: FontWeight.bold,
           color: Color(0xFF56575a),
