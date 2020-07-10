@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:app_trips/scr/pages/estrellas_page.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionPlacePage extends StatelessWidget {
@@ -21,8 +21,13 @@ class DescriptionPlacePage extends StatelessWidget {
     return Row(
       children: <Widget>[
         _crearTitulo(),
-        Row(
-          children: _obtenerLasEstrellas(),
+        Container(
+          margin: EdgeInsets.only(
+            top: 322.0,
+          ),
+          child: EstrellasPage(
+            cantidadEstrellas: cantidadEstrellas,
+          ),
         )
       ],
     );
@@ -42,43 +47,6 @@ class DescriptionPlacePage extends StatelessWidget {
           fontWeight: FontWeight.w900,
         ),
         textAlign: TextAlign.left,
-      ),
-    );
-  }
-
-  Container _crearStartRelleno() {
-    return Container(
-      margin: EdgeInsets.only(
-        top: 323,
-        right: 3.0,
-      ),
-      child: Icon(
-        Icons.star,
-        color: Color(0xFFf2C611),
-      ),
-    );
-  }
-
-  Container _crearStartSinRelleno() {
-    return Container(
-      margin: EdgeInsets.only(
-        top: 323,
-        right: 3.0,
-      ),
-      child: Icon(
-        Icons.star_border,
-      ),
-    );
-  }
-
-  Container _crearMediaEstrella() {
-    return Container(
-      margin: EdgeInsets.only(
-        top: 323,
-        right: 3.0,
-      ),
-      child: Icon(
-        Icons.star_half,
       ),
     );
   }
@@ -109,25 +77,5 @@ class DescriptionPlacePage extends StatelessWidget {
       ),
       alignment: Alignment.bottomLeft,
     );
-  }
-
-  List<Widget> _obtenerLasEstrellas() {
-    final int estrellasCompletas = cantidadEstrellas ~/ 1;
-    final double estrellasMedias = cantidadEstrellas % 1;
-    final List<Widget> listaEstrellas = [];
-
-    for (int i = 0; i < estrellasCompletas; i++) {
-      listaEstrellas.add(_crearStartRelleno());
-    }
-
-    if (estrellasMedias > 0.5) {
-      listaEstrellas.add(_crearMediaEstrella());
-    }
-
-    if (estrellasMedias < 0.5) {
-      listaEstrellas.add(_crearStartSinRelleno());
-    }
-
-    return listaEstrellas;
   }
 }
