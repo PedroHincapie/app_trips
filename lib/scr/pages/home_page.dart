@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
   String nombreUsuario = 'Varuna Yasas';
   String detalles = '1 review 5 photos';
   String comentario = 'There is an amazing place Sri lanka';
+  double cantidadEstrellas = 2.10;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class HomePage extends StatelessWidget {
         children: <Widget>[
           DescriptionPlacePage(
             nombreSitio: 'Duwili Ella',
-            cantidadEstrellas: 4.6,
+            cantidadEstrellas: 3.8,
             descripcionSitio: _texto,
           ),
           ReviewPage(
@@ -33,6 +34,7 @@ class HomePage extends StatelessWidget {
             detalles: detalles,
             nombreUsuario: nombreUsuario,
             urlImagen: urlImagen,
+            cantidadEstrellas: cantidadEstrellas,
           )
         ],
       ),
