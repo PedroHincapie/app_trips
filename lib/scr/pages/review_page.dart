@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:app_trips/scr/pages/estrellas_page.dart';
 import 'package:flutter/material.dart';
 
 class ReviewPage extends StatelessWidget {
@@ -8,12 +8,14 @@ class ReviewPage extends StatelessWidget {
   String nombreUsuario;
   String detalles;
   String comentario;
+  double cantidadEstrellas;
 
   ReviewPage({
     @required this.urlImagen,
     @required this.nombreUsuario,
     @required this.detalles,
     @required this.comentario,
+    @required this.cantidadEstrellas,
   });
 
   @override
@@ -56,15 +58,63 @@ class ReviewPage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         _crearNombreDelUsuario(),
+        _crearInformacionUsuario(),
+        _crearComentarioUsuario()
       ],
     );
   }
 
   Widget _crearNombreDelUsuario() {
     return Container(
-      child: Text(nombreUsuario),
+      child: Text(
+        nombreUsuario,
+        textAlign: TextAlign.left,
+        style: TextStyle(fontSize: 17.0),
+      ),
+      margin: EdgeInsets.only(
+        top: 60.0,
+        left: 12.0,
+      ),
+    );
+  }
+
+  Widget _crearInformacionUsuario() {
+    return Container(
+      child: Row(
+        children: <Widget>[
+          Text(
+            detalles,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              fontSize: 13.0,
+              color: Color(0xFFa3A5a7),
+            ),
+          ),
+          SizedBox(
+            width: 5.0,
+          ),
+          EstrellasPage(
+            cantidadEstrellas: cantidadEstrellas,tamano: 16.0,
+          ),
+        ],
+      ),
+      margin: EdgeInsets.only(left: 12.0, top: 4.0),
+    );
+  }
+
+  Widget _crearComentarioUsuario() {
+    return Container(
+      child: Text(
+        comentario,
+        textAlign: TextAlign.left,
+        style: TextStyle(
+          fontSize: 13.0,
+          fontWeight: FontWeight.w900,
+        ),
+      ),
       margin: EdgeInsets.only(
         left: 12.0,
+        top: 4.0,
       ),
     );
   }
