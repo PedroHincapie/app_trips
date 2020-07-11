@@ -23,7 +23,7 @@ class DescriptionPlacePage extends StatelessWidget {
         _crearTitulo(),
         Container(
           margin: EdgeInsets.only(
-            top: 222.0,
+            top: 322.0,
           ),
           child: EstrellasPage(
             cantidadEstrellas: cantidadEstrellas,
@@ -36,7 +36,7 @@ class DescriptionPlacePage extends StatelessWidget {
   Container _crearTitulo() {
     return Container(
       margin: EdgeInsets.only(
-        top: 220.0,
+        top: 320.0,
         left: 20.0,
         right: 20.0,
       ),
