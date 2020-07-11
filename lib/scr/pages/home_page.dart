@@ -1,3 +1,4 @@
+import 'package:app_trips/scr/pages/gradiente_back_page.dart';
 import 'package:app_trips/scr/pages/review_list_page.dart';
 import 'package:flutter/material.dart';
 
@@ -11,17 +12,19 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Titulo'),
-      ),
-      body: Column(
+      body: Stack(
         children: <Widget>[
-          DescriptionPlacePage(
-            nombreSitio: 'Duwili Ella',
-            cantidadEstrellas: 3.8,
-            descripcionSitio: _texto,
+          ListView(
+            children: <Widget>[
+              DescriptionPlacePage(
+                nombreSitio: 'Duwili Ella',
+                cantidadEstrellas: 3.8,
+                descripcionSitio: _texto,
+              ),
+              ReviewListPage(),
+            ],
           ),
-          ReviewListPage()
+          GradieBackPage(),
         ],
       ),
     );
