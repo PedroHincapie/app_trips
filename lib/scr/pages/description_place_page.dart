@@ -21,30 +21,34 @@ class DescriptionPlacePage extends StatelessWidget {
     return Row(
       children: <Widget>[
         _crearTitulo(),
-        Container(
-          margin: EdgeInsets.only(
-            top: 322.0,
-          ),
-          child: EstrellasPage(
-            cantidadEstrellas: cantidadEstrellas,
-          ),
-        )
+        _crearEstrellas(),
       ],
+    );
+  }
+
+  Container _crearEstrellas() {
+    return Container(
+      margin: EdgeInsets.only(
+        top: 255.0,
+      ),
+      child: EstrellasPage(
+        cantidadEstrellas: cantidadEstrellas,
+      ),
     );
   }
 
   Container _crearTitulo() {
     return Container(
       margin: EdgeInsets.only(
-        top: 320.0,
+        top: 250.0,
         left: 20.0,
         right: 20.0,
       ),
       child: Text(
         nombreSitio,
         style: TextStyle(
-          fontSize: 30.0,
-          fontWeight: FontWeight.w900,
+          fontSize: 25.0,
+          fontWeight: FontWeight.w600,
         ),
         textAlign: TextAlign.left,
       ),
@@ -70,7 +74,7 @@ class DescriptionPlacePage extends StatelessWidget {
       child: Text(
         descripcionSitio,
         style: const TextStyle(
-          fontSize: 16.0,
+          fontSize: 15.0,
           fontWeight: FontWeight.bold,
           color: Color(0xFF56575a),
         ),
