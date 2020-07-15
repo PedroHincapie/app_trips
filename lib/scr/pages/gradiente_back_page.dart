@@ -11,11 +11,23 @@ class GradieBackPage extends StatelessWidget {
               Color(0xFF4268D3),
               Color(0xFF584CD1),
             ],
-            begin: FractionalOffset(0.3, 0.0),
-            end: FractionalOffset(1.0, 0.6),
+            begin: FractionalOffset(0.2, 0.0),
+            end: FractionalOffset(1.0, 0.7),
             stops: [0.0, 0.6],
             tileMode: TileMode.clamp),
       ),
+      child: SafeArea(
+        top: false,
+        child: Text(
+          'Stan Lee',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 30.0,
+          ),
+        ),
+      ),
+      alignment: Alignment(-0.9,-0.6),
     );
   }
 }
