@@ -4,7 +4,7 @@ class GradieBackPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300.0,
+      height: 250.0,
       decoration: BoxDecoration(
         gradient: LinearGradient(
             colors: [
