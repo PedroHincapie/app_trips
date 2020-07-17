@@ -4,7 +4,7 @@ class GradieBackPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
+      height: 300.0,
       decoration: BoxDecoration(
         gradient: LinearGradient(
             colors: [
@@ -16,18 +16,15 @@ class GradieBackPage extends StatelessWidget {
             stops: [0.0, 0.6],
             tileMode: TileMode.clamp),
       ),
-      child: SafeArea(
-        top: false,
-        child: Text(
-          'Stan Lee',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 30.0,
-          ),
+      child: Text(
+        'Stan Lee',
+        style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 30.0,
         ),
       ),
-      alignment: Alignment(-0.9,-0.6),
+      alignment: Alignment(-0.9, -0.6),
     );
   }
 }
