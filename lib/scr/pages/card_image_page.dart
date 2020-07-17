@@ -8,7 +8,7 @@ class CardImagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final card = Container(
-      height: 350.0,
+      height: 400.0,
       width: 250.0,
       margin: EdgeInsets.only(
         top: 80.0,
@@ -19,7 +19,7 @@ class CardImagePage extends StatelessWidget {
         shape: BoxShape.rectangle,
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.black26,
+            color: Colors.black54,
             blurRadius: 15.0,
             offset: Offset(0.0, 7.0),
           ),
