@@ -5,7 +5,7 @@ class CardImageListPage extends StatelessWidget {
   String _urlImagen = 'assets/images/cap.jpg';
   String _urlImagen2 = 'assets/images/hulk.jpg';
   String _urlImagen3 = 'assets/images/spider.jpg';
-  String _urlImagen4 = 'assets/images/cap.jpg';
+  String _urlImagen4 = 'assets/images/iron.jpg';
 
   @override
   Widget build(BuildContext context) {
