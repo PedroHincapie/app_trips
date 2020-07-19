@@ -11,7 +11,7 @@ class GradieBackPage extends StatelessWidget {
               Color(0xFF4268D3),
               Color(0xFF584CD1),
             ],
-            begin: FractionalOffset(0.2, 0.0),
+            begin: FractionalOffset(0.5, 0.0),
             end: FractionalOffset(1.0, 0.7),
             stops: [0.0, 0.6],
             tileMode: TileMode.clamp),
