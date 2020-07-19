@@ -35,8 +35,8 @@ class ReviewPage extends StatelessWidget {
         image: NetworkImage(urlImagen),
         fadeInDuration: Duration(milliseconds: 200),
         fit: BoxFit.cover,
-        width: 80.0,
-        height: 80.0,
+        width: 90.0,
+        height: 90.0,
       ),
     );
 
@@ -47,7 +47,7 @@ class ReviewPage extends StatelessWidget {
         right: 20.0,
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(35.0),
+        borderRadius: BorderRadius.circular(60.0),
         child: containerFoto,
       ),
     );
@@ -94,7 +94,8 @@ class ReviewPage extends StatelessWidget {
             width: 5.0,
           ),
           EstrellasPage(
-            cantidadEstrellas: cantidadEstrellas,tamano: 16.0,
+            cantidadEstrellas: cantidadEstrellas,
+            tamano: 16.0,
           ),
         ],
       ),
