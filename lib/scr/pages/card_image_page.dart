@@ -19,7 +19,7 @@ class CardImagePage extends StatelessWidget {
         shape: BoxShape.rectangle,
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.black54,
+            color: Colors.black87,
             blurRadius: 15.0,
             offset: Offset(0.0, 7.0),
           ),
