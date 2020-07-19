@@ -38,24 +38,24 @@ class ReviewListPage extends StatelessWidget {
             detalles: detalles,
             comentario: comentario,
             cantidadEstrellas: cantidadEstrellas),
-        ReviewPage(
-            urlImagen: urlImagen,
-            nombreUsuario: nombreUsuario,
-            detalles: detalles,
-            comentario: comentario,
-            cantidadEstrellas: cantidadEstrellas),
-        ReviewPage(
-            urlImagen: urlImagen2,
-            nombreUsuario: nombreUsuario,
-            detalles: detalles,
-            comentario: comentario,
-            cantidadEstrellas: cantidadEstrellas),
-        ReviewPage(
-            urlImagen: urlImagen3,
-            nombreUsuario: nombreUsuario,
-            detalles: detalles,
-            comentario: comentario,
-            cantidadEstrellas: cantidadEstrellas),
+//        ReviewPage(
+//            urlImagen: urlImagen,
+//            nombreUsuario: nombreUsuario,
+//            detalles: detalles,
+//            comentario: comentario,
+//            cantidadEstrellas: cantidadEstrellas),
+//        ReviewPage(
+//            urlImagen: urlImagen2,
+//            nombreUsuario: nombreUsuario,
+//            detalles: detalles,
+//            comentario: comentario,
+//            cantidadEstrellas: cantidadEstrellas),
+//        ReviewPage(
+//            urlImagen: urlImagen3,
+//            nombreUsuario: nombreUsuario,
+//            detalles: detalles,
+//            comentario: comentario,
+//            cantidadEstrellas: cantidadEstrellas),
       ],
     );
   }
