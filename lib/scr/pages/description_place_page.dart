@@ -1,5 +1,8 @@
+import 'package:app_trips/scr/pages/button_purple_page.dart';
 import 'package:app_trips/scr/pages/estrellas_page.dart';
 import 'package:flutter/material.dart';
+
+const buttonText = 'Navigate';
 
 class DescriptionPlacePage extends StatelessWidget {
   String nombreSitio;
@@ -60,6 +63,10 @@ class DescriptionPlacePage extends StatelessWidget {
       children: <Widget>[
         _crearTituloEstrellas(),
         _crearDescripcion(),
+        Container(
+          child: ButtonPurplePage(buttonText),
+          alignment: Alignment.centerLeft,
+        )
       ],
     );
   }
