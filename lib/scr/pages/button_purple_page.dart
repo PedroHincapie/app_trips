@@ -8,6 +8,13 @@ class ButtonPurplePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: () {
+        Scaffold.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Navegando'),
+          ),
+        );
+      },
       child: Container(
         margin: EdgeInsets.only(
           top: 30,
