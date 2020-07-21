@@ -1,3 +1,4 @@
+import 'package:app_trips/scr/pages/floating_action_button_green_page.dart';
 import 'package:flutter/material.dart';
 
 class CardImagePage extends StatelessWidget {
@@ -31,6 +32,12 @@ class CardImagePage extends StatelessWidget {
       ),
     );
 
-    return card;
+    return Stack(
+      alignment: Alignment(0.9, 1.1),
+      children: <Widget>[
+        card,
+        FloatingActionButtonGreenPage(),
+      ],
+    );
   }
 }
