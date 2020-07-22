@@ -1,4 +1,4 @@
-import 'package:app_trips/scr/pages/home_page.dart';
+import 'package:app_trips/scr/pages/platzi_trips_cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Lato',
       ),
-      home: HomePage(),
+      home: PlatziTripsCupertino(),
     );
   }
 }
