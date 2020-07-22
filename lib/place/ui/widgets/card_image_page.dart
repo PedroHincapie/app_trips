@@ -1,4 +1,4 @@
-import 'package:app_trips/scr/pages/floating_action_button_green_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/widgets/floating_action_button_green_page.dart';
 import 'package:flutter/material.dart';
 
 class CardImagePage extends StatelessWidget {

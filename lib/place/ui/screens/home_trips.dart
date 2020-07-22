@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'description_place.dart';
+import '../widgets/description_place.dart';
 import 'header_appbar.dart';
-import 'review_list.dart';
+import '../widgets/review_list.dart';
 
 class HomeTrips extends StatelessWidget {
   String descriptionDummy =
@@ -10,7 +10,6 @@ class HomeTrips extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Stack(
       children: <Widget>[
         ListView(

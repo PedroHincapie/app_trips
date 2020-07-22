@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'home_trips.dart';
-import 'profile_trips.dart';
-import 'search_trips.dart';
+import '../../place/ui/screens/home_trips.dart';
+import '../../user/ui/screens/profile_trips.dart';
+import '../../place/ui/screens/search_trips.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
   final List<Widget> widgetChildren = [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'button_purple.dart';
+import '../../../widgets/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -13,7 +13,6 @@ class DescriptionPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
 
     final star_half = Container (
       margin: EdgeInsets.only(

@@ -1,5 +1,6 @@
-import 'package:app_trips/scr/pages/card_image_page.dart';
 import 'package:flutter/material.dart';
+
+import 'card_image_page.dart';
 
 class CardImageListPage extends StatelessWidget {
   String _urlImagen = 'assets/images/cap.jpg';

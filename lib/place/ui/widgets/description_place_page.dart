@@ -1,5 +1,5 @@
-import 'package:app_trips/scr/pages/button_purple_page.dart';
-import 'package:app_trips/scr/pages/estrellas_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/widgets/button_purple_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/place/ui/widgets/estrellas_page.dart';
 import 'package:flutter/material.dart';
 
 const buttonText = 'Navigate';

@@ -1,5 +1,5 @@
-import 'package:app_trips/scr/pages/card_image_list_page.dart';
-import 'package:app_trips/scr/pages/gradiente_back_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/place/ui/widgets/card_image_list_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/widgets/gradiente_back_page.dart';
 import 'package:flutter/material.dart';
 
 class HeaderAppBarPage extends StatelessWidget {

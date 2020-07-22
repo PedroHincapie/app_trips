@@ -1,8 +1,8 @@
-import 'package:app_trips/scr/pages/header_app_bar_page.dart';
-import 'package:app_trips/scr/pages/review_list_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/place/ui/screens/header_app_bar_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/place/ui/widgets/review_list_page.dart';
 import 'package:flutter/material.dart';
 
-import 'description_place_page.dart';
+import '../widgets/description_place_page.dart';
 
 class HomePage extends StatelessWidget {
   final String _texto =

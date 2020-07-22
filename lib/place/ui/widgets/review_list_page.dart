@@ -1,4 +1,4 @@
-import 'package:app_trips/scr/pages/review_page.dart';
+import 'file:///D:/Udemy/flutter/app_trips/lib/place/ui/widgets/review_page.dart';
 import 'package:flutter/material.dart';
 
 class ReviewListPage extends StatelessWidget {
