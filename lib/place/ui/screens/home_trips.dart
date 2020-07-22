@@ -1,4 +1,5 @@
 import 'package:app_trips/place/ui/widgets/description_place.dart';
+import 'package:app_trips/place/ui/widgets/description_place_page.dart';
 import 'package:app_trips/place/ui/widgets/review_list.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,12 @@ class HomeTrips extends StatelessWidget {
       children: <Widget>[
         ListView(
           children: <Widget>[
-            DescriptionPlace("Cartagena", 4, descriptionDummy),
+//            DescriptionPlace("Cartagena", 4, descriptionDummy),
+            DescriptionPlacePage(
+              nombreSitio: 'Momteria',
+              cantidadEstrellas: 4.0,
+              descripcionSitio: descriptionDummy,
+            ),
             ReviewList()
           ],
         ),
