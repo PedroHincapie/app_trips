@@ -12,11 +12,11 @@ class CardImageList extends StatelessWidget {
         padding: EdgeInsets.all(25.0),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          CardImage("assets/img/beach_palm.jpeg"),
-          CardImage("assets/img/mountain.jpeg"),
-          CardImage("assets/img/mountain_stars.jpeg"),
-          CardImage("assets/img/river.jpeg"),
-          CardImage("assets/img/sunset.jpeg"),
+          CardImage("assets/images/beach_palm.jpeg"),
+          CardImage("assets/images/mountain.jpeg"),
+          CardImage("assets/images/mountain_stars.jpeg"),
+          CardImage("assets/images/river.jpeg"),
+          CardImage("assets/images/sunset.jpeg"),
         ],
       ),
     );
