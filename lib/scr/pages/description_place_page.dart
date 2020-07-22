@@ -63,12 +63,16 @@ class DescriptionPlacePage extends StatelessWidget {
       children: <Widget>[
         _crearTituloEstrellas(),
         _crearDescripcion(),
-        Container(
-          child: ButtonPurplePage(buttonText),
-          alignment: Alignment.centerLeft,
-        )
+        _crearButtonNavigate()
       ],
     );
+  }
+
+  Container _crearButtonNavigate() {
+    return Container(
+        child: ButtonPurplePage(buttonText),
+        alignment: Alignment.centerLeft,
+      );
   }
 
   Widget _crearDescripcion() {
