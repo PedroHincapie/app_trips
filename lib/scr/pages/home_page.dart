@@ -10,22 +10,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          ListView(
-            children: <Widget>[
-              DescriptionPlacePage(
-                nombreSitio: 'Duwili Ella',
-                cantidadEstrellas: 5.0,
-                descripcionSitio: _texto,
-              ),
-              ReviewListPage(),
-            ],
-          ),
-          HeaderAppBarPage()
-        ],
-      ),
+    return Stack(
+      children: <Widget>[
+        ListView(
+          children: <Widget>[
+            DescriptionPlacePage(
+              nombreSitio: 'Duwili Ella',
+              cantidadEstrellas: 5.0,
+              descripcionSitio: _texto,
+            ),
+            ReviewListPage(),
+          ],
+        ),
+        HeaderAppBarPage()
+      ],
     );
   }
 }
