@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "80127324003",
+    "firebase_url": "https://app-hijos.firebaseio.com",
+    "project_id": "app-hijos",
+    "storage_bucket": "app-hijos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80127324003:android:2a62fc45ee05ba73d12d56",
+        "android_client_info": {
+          "package_name": "com.pedro.app_trips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80127324003-2ht5nuf4gddghn3i2bgh04sn3852i2j7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pedro.app_trips",
+            "certificate_hash": "2e454e371204e13736872a7fe3a05a978b0a7449"
+          }
+        },
+        {
+          "client_id": "80127324003-c4pbta5shlclkaj7tt3bnpjbf50nq8qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDOKgpWzO0yOQdDwyfapjCiQQwCgLe6g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80127324003-c4pbta5shlclkaj7tt3bnpjbf50nq8qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
