@@ -1,4 +1,4 @@
-import 'package:app_trips/user/bloc/bloc_user.dart';
+import 'package:app_trips/user/blocs/bloc_user.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
