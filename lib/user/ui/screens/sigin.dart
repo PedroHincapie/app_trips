@@ -1,4 +1,6 @@
+import 'package:app_trips/widgets/button_green.dart';
 import 'package:app_trips/widgets/gradient_back.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Sigin extends StatefulWidget {
@@ -24,6 +26,7 @@ class _SiginState extends State<Sigin> {
             height,
           ),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
                 'Welcome \n This is your travel APP',
@@ -32,6 +35,12 @@ class _SiginState extends State<Sigin> {
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
+              ButtonGreen(
+                text: 'G Login with Gmail',
+                onPressed: null,
+                width: 300.0,
+                height: 50.0,
+              )
             ],
           )
         ],
