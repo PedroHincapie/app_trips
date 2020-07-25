@@ -1,4 +1,3 @@
-import 'package:app_trips/place/ui/widgets/description_place.dart';
 import 'package:app_trips/place/ui/widgets/description_place_page.dart';
 import 'package:app_trips/place/ui/widgets/review_list.dart';
 import 'package:flutter/material.dart';
