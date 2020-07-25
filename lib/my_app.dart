@@ -1,8 +1,7 @@
 import 'package:app_trips/user/blocs/bloc_user.dart';
+import 'package:app_trips/user/ui/screens/sigin.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
-
-import 'platzi_trips_cupertino.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -15,7 +14,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: 'Lato',
         ),
-        home: PlatziTripsCupertino(),
+        //home: PlatziTripsCupertino(),
+        home: Sigin(),
       ),
     );
   }
