@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: 'Lato',
         ),
-        //home: PlatziTripsCupertino(),
         home: Sigin(),
       ),
     );
