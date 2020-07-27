@@ -1,7 +1,9 @@
+import 'package:app_trips/user/blocs/bloc_user.dart';
 import 'package:app_trips/widgets/button_green.dart';
 import 'package:app_trips/widgets/gradient_back.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
 class Sigin extends StatefulWidget {
   @override
@@ -9,8 +11,12 @@ class Sigin extends StatefulWidget {
 }
 
 class _SiginState extends State<Sigin> {
+  BlocUser _user;
+
   @override
   Widget build(BuildContext context) {
+    _user = BlocProvider.of(context);
+
     return _signInGoogleUI();
   }
 
@@ -37,7 +43,9 @@ class _SiginState extends State<Sigin> {
               ),
               ButtonGreen(
                 text: 'G Login with Gmail',
-                onPressed: null,
+                onPressed: () {
+                  _user.signIn().then((value) => print(value));
+                },
                 width: 300.0,
                 height: 50.0,
               )
