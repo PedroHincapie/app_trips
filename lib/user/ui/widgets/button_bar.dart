@@ -1,10 +1,16 @@
+import 'package:app_trips/user/blocs/bloc_user.dart';
 import 'package:flutter/material.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
 import 'circle_button.dart';
 
 class ButtonsBar extends StatelessWidget {
+  BlocUser _userBloc;
+
   @override
   Widget build(BuildContext context) {
+    _userBloc = BlocProvider.of(context);
+
     return Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 0.0,
@@ -34,5 +40,6 @@ class ButtonsBar extends StatelessWidget {
 
   void _singOut() {
     print('Pedro salio');
+    _userBloc.signOut();
   }
 }
