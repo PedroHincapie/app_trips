@@ -17,7 +17,7 @@ class _SiginState extends State<Sigin> {
 
   @override
   Widget build(BuildContext context) {
-    _user = BlocProvider.of(context);
+    _user = BlocProvider.of<BlocUser>(context);
 
     return _handleCurrentSession();
   }
